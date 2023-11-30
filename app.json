@@ -20,7 +20,7 @@
 			"type": "PerspectiveCamera",
 			"name": "Camera",
 			"layers": 1,
-			"matrix": [-0.9432845990484766,0,0.3319851882207318,0,0.15647374291647426,0.8819582781814931,0.44459595513774663,0,-0.2927970849849156,0.4713274822744119,-0.8319376608119144,0,-5.473791043979665,8.811386053888054,-15.55293119511848,1],
+			"matrix": [-0.8759439017973742,-1.3877787807814457e-17,0.48241297754516427,0,0.0796158960096094,0.9862874090923319,0.14456298201310766,0,-0.47579784573553735,0.16503680397394707,-0.8639324414139604,0,-9.116687163346871,3.162244061746703,-16.553672676810326,1],
 			"up": [0,1,0],
 			"fov": 50,
 			"zoom": 1,
@@ -122,23 +122,19 @@
 				"roughness": 1,
 				"metalness": 0.22,
 				"emissive": 16777215,
-				"emissiveIntensity": 0.9,
+				"emissiveIntensity": 0.2,
 				"envMapIntensity": 1,
 				"side": 2,
-				"blendColor": 0,
-				"alphaTest": 1
+				"blendColor": 0
 			},
 			{
-				"uuid": "9fb80f62-8137-4d3c-a5a1-bbad95965bda",
+				"uuid": "10419a09-6a70-40b8-af20-b0e94ce726f7",
 				"type": "MeshStandardMaterial",
-				"name": "マテリアル",
-				"color": 6987905,
-				"roughness": 1,
-				"metalness": 0.2,
+				"color": 7639161,
+				"roughness": 0.76,
+				"metalness": 0.08,
 				"emissive": 0,
-				"emissiveIntensity": 0.5,
 				"envMapIntensity": 1,
-				"side": 2,
 				"blendColor": 0
 			}],
 		"object": {
@@ -148,7 +144,7 @@
 			"layers": 1,
 			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
 			"up": [0,1,0],
-			"background": 12113919,
+			"background": 0,
 			"children": [
 				{
 					"uuid": "133cd25f-28cf-4410-bf51-d94fec968129",
@@ -181,44 +177,46 @@
 								"name": "円"
 							},
 							"layers": 1,
-							"matrix": [25,0,0,0,0,1,0,0,0,0,25,0,0,-2.5,0,1],
+							"matrix": [15,0,0,0,0,1,0,0,0,0,15,0,0,-2.5,0,1],
 							"up": [0,1,0],
 							"geometry": "41689ec1-8848-495c-96bc-2cf64940118f",
-							"material": "9fb80f62-8137-4d3c-a5a1-bbad95965bda"
+							"material": "10419a09-6a70-40b8-af20-b0e94ce726f7"
 						}]
 				},
 				{
-					"uuid": "bd48a342-4ea4-4413-a15a-db211b92b43f",
-					"type": "DirectionalLight",
-					"name": "DirectionalLight",
-					"castShadow": true,
+					"uuid": "4f3895dc-8133-4608-992f-1d58b0e36c88",
+					"type": "PointLight",
+					"name": "PointLight",
 					"layers": 1,
-					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,3.9361165999373338,8.072617970139373,-9.769330433785976,1],
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,2.06385806347976,0,1],
 					"up": [0,1,0],
-					"color": 16709315,
-					"intensity": 3,
+					"color": 16702823,
+					"intensity": 1000,
+					"distance": 0,
+					"decay": 3.18,
 					"shadow": {
+						"radius": 2.08,
 						"camera": {
-							"uuid": "0f954d85-2749-48ee-a414-b719ad7e46a0",
-							"type": "OrthographicCamera",
+							"uuid": "bbcdec0d-61b9-4a34-a7da-812a56e29f35",
+							"type": "PerspectiveCamera",
 							"layers": 1,
 							"up": [0,1,0],
+							"fov": 90,
 							"zoom": 1,
-							"left": -5,
-							"right": 5,
-							"top": 5,
-							"bottom": -5,
 							"near": 0.5,
-							"far": 500
+							"far": 500,
+							"focus": 10,
+							"aspect": 1,
+							"filmGauge": 35,
+							"filmOffset": 0
 						}
 					}
 				}],
 			"fog": {
-				"type": "Fog",
+				"type": "FogExp2",
 				"name": "",
-				"color": 11184810,
-				"near": 0.1,
-				"far": 50
+				"color": 0,
+				"density": 0.04
 			}
 		}
 	},
