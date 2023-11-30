@@ -4,7 +4,7 @@
 	},
 	"project": {
 		"shadows": true,
-		"shadowType": 1,
+		"shadowType": 0,
 		"vr": false,
 		"toneMapping": 0,
 		"toneMappingExposure": 1
@@ -20,7 +20,7 @@
 			"type": "PerspectiveCamera",
 			"name": "Camera",
 			"layers": 1,
-			"matrix": [-0.9832279669823576,3.469446951953614e-18,0.18238082394742192,0,0.03905218017906355,0.9768064042935387,0.21053307520289954,0,-0.1781507568521741,0.21412437631229142,-0.9604233750288829,0,-3.51564329610809,4.225549985960929,-18.953082543721962,1],
+			"matrix": [-0.9465572317631805,-6.938893903907228e-18,0.32253590032246704,0,0.08160640062511493,0.9674623721153734,0.23949311872767415,0,-0.31204134721834165,0.25301493738689534,-0.915758504784568,0,-3.5985793732231848,2.9178643885316458,-10.560875010790069,1],
 			"up": [0,1,0],
 			"fov": 50,
 			"zoom": 1,
@@ -122,17 +122,17 @@
 				"roughness": 1,
 				"metalness": 0.22,
 				"emissive": 16777215,
-				"emissiveIntensity": 0.5,
 				"envMapIntensity": 1,
 				"side": 2,
+				"vertexColors": true,
 				"blendColor": 0
 			},
 			{
 				"uuid": "10419a09-6a70-40b8-af20-b0e94ce726f7",
 				"type": "MeshStandardMaterial",
 				"color": 7639161,
-				"roughness": 1,
-				"metalness": 0.2,
+				"roughness": 0.88,
+				"metalness": 0.4,
 				"emissive": 0,
 				"envMapIntensity": 1,
 				"blendColor": 0
@@ -191,11 +191,11 @@
 					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,2.06385806347976,0,1],
 					"up": [0,1,0],
 					"color": 16702823,
-					"intensity": 3,
+					"intensity": 0.4,
 					"distance": 0,
-					"decay": 0.06,
+					"decay": 0.42,
 					"shadow": {
-						"radius": 1.28,
+						"radius": 1.36,
 						"camera": {
 							"uuid": "bbcdec0d-61b9-4a34-a7da-812a56e29f35",
 							"type": "PerspectiveCamera",
